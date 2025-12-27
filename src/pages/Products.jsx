@@ -111,7 +111,7 @@ function Products() {
                 onError={e => {
                   e.target.onerror = null;
                   e.target.src =
-                    "/images/produit.webp";
+                    "/images/placeholder.png";
                 }}
               />
 
