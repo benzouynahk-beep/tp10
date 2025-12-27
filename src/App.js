@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
 
@@ -19,14 +19,14 @@ function App() {
   const isAuthenticated = useSelector(state => state.auth.isAuthenticated);
 
   return (
-    <Router>
+ 
     
-      
+      <>
 
      
       {isAuthenticated && <Header />}
 
-      <Routes>
+      <Routes >
         <Route path="/login" element={<Login />} />
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -37,7 +37,7 @@ function App() {
         <Route path="/addproduct" element={<AddProduct />} />
         <Route path="/cart" element={<Cart />} />
       </Routes>
-    </Router>
+   </>
   );
 }
 
