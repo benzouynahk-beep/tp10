@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/benzouynahk-beep/tp10.git/static/css/main.dfad5b86.css",
+    "main.js": "/benzouynahk-beep/tp10.git/static/js/main.cbf52fb3.js",
+    "index.html": "/benzouynahk-beep/tp10.git/index.html",
+    "main.dfad5b86.css.map": "/benzouynahk-beep/tp10.git/static/css/main.dfad5b86.css.map",
+    "main.cbf52fb3.js.map": "/benzouynahk-beep/tp10.git/static/js/main.cbf52fb3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dfad5b86.css",
+    "static/js/main.cbf52fb3.js"
+  ]
+}
