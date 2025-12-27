@@ -1,21 +1,35 @@
 
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { Provider } from 'react-redux';
-import store from './redux/store';
-import App from './App';
-import './index.css';
-import { BrowserRouter } from "react-router-dom";
+// import React from 'react';
+// import ReactDOM from 'react-dom/client';
+// import { Provider } from 'react-redux';
+// import store from './redux/store';
+// import App from './App';
+// import './index.css';
+// import { BrowserRouter } from "react-router-dom";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <BrowserRouter >
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(
+//   <BrowserRouter >
+//   <Provider store={store}>
+//     <App />
+//   </Provider>
+//   </BrowserRouter>
+// );
+
+
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { HashRouter } from "react-router-dom";
+import { Provider } from "react-redux";
+import App from "./App";
+import store from "./redux/store";
+
+ReactDOM.createRoot(document.getElementById("root")).render(
   <Provider store={store}>
-    <App />
+    <HashRouter>
+      <App />
+    </HashRouter>
   </Provider>
-  </BrowserRouter>
 );
-
-
 
 
