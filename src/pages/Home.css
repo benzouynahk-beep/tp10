@@ -1,0 +1,63 @@
+/* الصفحة كاملة */
+.home {
+  min-height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0d6efd, #6610f2);
+  color: white;
+  padding: 20px;
+}
+
+/* الصندوق */
+.home-box {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+  padding: 50px 40px;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 600px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
+
+/* العنوان */
+.home-box h1 {
+  font-size: 44px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+/* النص */
+.home-box p {
+  font-size: 20px;
+  opacity: 0.9;
+  margin-bottom: 30px;
+}
+
+/* زر */
+.home-btn {
+  display: inline-block;
+  padding: 14px 32px;
+  background: white;
+  color: #0d6efd;
+  font-weight: 700;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.home-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .home-box h1 {
+    font-size: 32px;
+  }
+
+  .home-box p {
+    font-size: 17px;
+  }
+}

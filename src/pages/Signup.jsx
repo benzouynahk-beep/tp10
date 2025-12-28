@@ -44,7 +44,7 @@ function Signup() {
   const buttonStyle = {
     width: '100%',
     padding: '12px',
-    background: 'linear-gradient(90deg, #4f46e5, #9333ea)',
+    background: 'linear-gradient(90deg, #000000ff, #3f1764ff)',
     color: '#fff',
     fontWeight: 'bold',
     border: 'none',
@@ -65,14 +65,14 @@ function Signup() {
   const titleStyle = {
     textAlign: 'center',
     marginBottom: '20px',
-    color: '#4f46e5'
+    color: '#0b0b0bff'
   };
 
   return (
     <div style={formStyle}>
       <h2 style={titleStyle}>Inscription</h2>
       <input style={inputStyle} placeholder="Nom" value={nom} onChange={e=>setNom(e.target.value)} />
-      <input style={inputStyle} placeholder="Prénom" value={prenom} onChange={e=>setPrenom(e.target.value)} />
+      <input style={inputStyle} placeholder="Prenom" value={prenom} onChange={e=>setPrenom(e.target.value)} />
       <input style={inputStyle} placeholder="Nom utilisateur" value={username} onChange={e=>setUsername(e.target.value)} />
       <input style={inputStyle} placeholder="Email" value={email} onChange={e=>setEmail(e.target.value)} />
       <input style={inputStyle} placeholder="Mot de passe" type="password" value={password} onChange={e=>setPassword(e.target.value)} />

@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { login } from '../redux/actions/authActions';
@@ -36,7 +37,7 @@ function Login() {
   const buttonStyle = {
     width: '100%',
     padding: '12px',
-    background: 'linear-gradient(90deg, #4f46e5, #9333ea)',
+    background: 'linear-gradient(90deg, #000000ff, #3f1764ff)',
     color: '#fff',
     fontWeight: 'bold',
     border: 'none',
@@ -57,14 +58,14 @@ function Login() {
   const titleStyle = {
     textAlign: 'center',
     marginBottom: '20px',
-    color: '#4f46e5'
+    color: '#0a0a0aff'
   };
 
   const linkStyle = {
     display: 'block',
     textAlign: 'center',
     marginTop: '15px',
-    color: '#1976d2',
+    color: '#6a4e9cff',
     textDecoration: 'none',
     fontSize: '14px'
   };
