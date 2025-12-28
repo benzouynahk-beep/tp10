@@ -1,4 +1,4 @@
-/* الصفحة كاملة */
+
 .cart-page {
   min-height: 100vh;
   background: #f4f6f8;
@@ -8,7 +8,6 @@
   padding: 20px;
 }
 
-/* الصندوق */
 .cart-box {
   width: 100%;
   max-width: 700px;
@@ -18,7 +17,6 @@
   padding: 25px;
 }
 
-/* العنوان */
 .cart-title {
   text-align: center;
   margin-bottom: 25px;
@@ -26,14 +24,14 @@
   font-size: 24px;
 }
 
-/* panier فارغ */
+
 .empty-cart {
   text-align: center;
   color: #888;
   font-size: 16px;
 }
 
-/* كل عنصر */
+
 .cart-item {
   display: flex;
   justify-content: space-between;
@@ -50,7 +48,7 @@
   box-shadow: 0 5px 15px rgba(0,0,0,0.08);
 }
 
-/* معلومات المنتج */
+
 .cart-info {
   display: flex;
   flex-direction: column;
@@ -67,7 +65,7 @@
   font-weight: 600;
 }
 
-/* الكمية */
+
 .qty {
   display: flex;
   align-items: center;
@@ -96,7 +94,6 @@
   font-weight: bold;
 }
 
-/* زر الحذف */
 .remove-btn {
   background: #dc3545;
   border: none;
@@ -111,7 +108,7 @@
   background: #bb2d3b;
 }
 
-/* المجموع */
+
 .total {
   margin-top: 25px;
   padding-top: 15px;

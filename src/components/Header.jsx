@@ -12,12 +12,12 @@ function Header() {
         <Link to="/" className="navbar-brand">Shop-Ease</Link>
       </div>
       <div className="navbar-right">
-        <Link to="/about" className="nav-link">À propos</Link>
+        <Link to="/about" className="nav-link">A propos</Link>
         <Link to="/products" className="nav-link">Produits</Link>
         <Link to="/cart" className="nav-link">
           Panier <span className="badge">{cartItems.length}</span> 🛒
         </Link>
-       <Link to="/logout" className="logout-link">Déconnexion</Link>
+       <Link to="/logout" className="logout-link">Deconnexion</Link>
       </div>
     </nav>
   );
