@@ -662,3 +662,128 @@
     justify-content: center;
   }
 }
+
+
+
+.add-product-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #eef2ff, #fdf4ff);
+  padding: 20px;
+}
+
+
+.add-product-form {
+  width: 100%;
+  max-width: 450px;
+  padding: 35px 30px;
+  background-color: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(10, 10, 10, 0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  animation: fadeSlide 0.5s ease;
+}
+
+
+.add-product-form h2 {
+  text-align: center;
+  color: #050505;
+  font-size: 26px;
+  font-weight: 900;
+  margin-bottom: 25px;
+  letter-spacing: 0.5px;
+}
+
+
+.add-product-form label {
+  font-weight: 600;
+  font-size: 14px;
+  color: #0b0b0b;
+}
+
+
+.add-product-form input,
+.add-product-form textarea {
+  padding: 12px 14px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  font-size: 14px;
+  width: 100%;
+  background-color: #f9fafb;
+  outline: none;
+  transition: all 0.25s ease;
+}
+
+.add-product-form input:focus,
+.add-product-form textarea:focus {
+
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.15);
+  background-color:#eef2ff;
+}
+
+
+.buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.add-product-form button {
+  flex: 1;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  color: #000000;
+  transition: all 0.3s ease;
+}
+
+.add-product-form button.save-btn {
+  background: linear-gradient(135deg);
+}
+
+.add-product-form button.save-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(8, 8, 8, 0.35);
+}
+
+.back-btn {
+  background: linear-gradient(135deg,  #fffcfc);
+}
+
+.back-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(9, 9, 9, 0.35);
+}
+
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@media (max-width: 480px) {
+  .add-product-form {
+    width: 90%;
+    padding: 25px;
+    gap: 15px;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+}
